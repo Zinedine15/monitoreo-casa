@@ -1,0 +1,138 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+main {
+    margin-top: 70px;
+}
+
+.card {
+    border: none;
+    /* Elimina los bordes */
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#plano {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#focoRecamara {
+    position: absolute;
+    width: 5%;
+    top: 30%;
+    height: auto;
+    left: 49%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+#alarma {
+    position: absolute;
+    width: 5%;
+    top: 82%;
+    height: auto;
+    left: 45%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+#focoSala {
+    position: absolute;
+    width: 5%;
+    top: 80%;
+    height: auto;
+    left: 20%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+#ventilador {
+    position: absolute;
+    width: 5%;
+    top: 80%;
+    height: auto;
+    left: 52%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.focoJardin {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.cortinas {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.camaras {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('imgs/fondo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 60%;
+}
+
+#title{
+    background: linear-gradient(90deg,#2e424d,#5b8291);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+#title2{
+    color: #2e424d;
+    font-weight: bold;
+    
+}
+
+#orden{
+    color: #0295a9;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#estado{
+    color: black;
+    text-align: center;
+}
