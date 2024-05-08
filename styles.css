@@ -45,7 +45,7 @@ main {
     height: auto;
     left: 49%;
     z-index: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(-10%, -50%);
 }
 
 #alarma {
@@ -55,7 +55,7 @@ main {
     height: auto;
     left: 45%;
     z-index: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(-60%, -60%);
 }
 
 #focoSala {
@@ -65,7 +65,7 @@ main {
     height: auto;
     left: 20%;
     z-index: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(40%, -40%);
 }
 
 #ventilador {
@@ -75,7 +75,7 @@ main {
     height: auto;
     left: 52%;
     z-index: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(-10%, -50%);
 }
 
 .focoJardin {
@@ -83,7 +83,7 @@ main {
     width: 5%;
     height: auto;
     z-index: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(15%, -50%);
 }
 
 .cortinas {
@@ -91,7 +91,7 @@ main {
     width: 7%;
     height: auto;
     z-index: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(30%, -50%);
 }
 
 .camaras {
@@ -99,7 +99,7 @@ main {
     width: 5%;
     height: auto;
     z-index: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(50%, 15%);
 }
 
 body {

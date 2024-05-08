@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
             estadoInicial: true
         },
         "Encender las cámaras": {
-            imagen: "imágenes/camaraOn.png",
+            imagen: "imágenes/camaraOn.gif",
             estadoInicial: false
         },
         "Apagar las cámaras": {
@@ -69,10 +69,10 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     // Función para cambiar el estado y la imagen
-    function cambiarEstadoYImagen(caso, imagenID, estadoInicial) {
+    function cambiarEstadoYImagen(caso, imagenClass, estadoInicial) {
         const nuevoEstadoTexto = estadoInicial ? "Desactivado" : "Activado";
         const nuevoEstadoColor = estadoInicial ? "red" : "green";
-        const imagenElement = document.getElementById(imagenID);
+        const imagenElement = document.getElementById(imagenClass);
 
         // Cambiar la imagen
         imagenElement.src = caso.imagen;
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         // Ejecutar el switch para cambiar el estado y la imagen según el comando
                         const caso = casos[ultimoRegistro.ordenUsr];
                         if (caso) {
-                            cambiarEstadoYImagen(caso, obtenerImagenID(ultimoRegistro.ordenUsr), caso.estadoInicial);
+                            cambiarEstadoYImagen(caso, obtenerImagenClass(ultimoRegistro.ordenUsr), caso.estadoInicial);
                         } else {
                             OrdenText.textContent = "Orden no reconocida";
                         }
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Función para obtener el ID de la imagen según el comando
-    function obtenerImagenID(comando) {
+    function obtenerImagenClass(comando) {
         switch (comando) {
             case "Encender la luz de la recámara":
             case "Apagar la luz de la recámara":
